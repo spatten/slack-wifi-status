@@ -9,7 +9,7 @@ module SlackWifiStatus
     end
 
     def self.home_ssids
-      ENV['HOME_SSIDS'].split(/;/) || []
+      SlackWifiStatus::Config.config['home_ssids']
     end
 
     def self.status_hash

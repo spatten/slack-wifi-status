@@ -10,7 +10,7 @@ module SlackWifiStatus
       uri = URI.parse('https://slack.com/api/users.profile.set')
 
       payload = { status_text: message, status_emoji: emoji }.to_json
-      token = ENV['SLACK_WIFI_STATUS_KEY']
+      token = SlackWifiStatus::Config.config['oauth_key']
 
       uri.query = URI.encode_www_form(token: token, profile: payload)
 

@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require File.join(File.dirname(__FILE__), '../lib/slack_wifi_status')
+
+SlackWifiStatus::StatusFromWifi.set_status
