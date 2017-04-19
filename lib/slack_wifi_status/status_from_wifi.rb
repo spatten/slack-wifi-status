@@ -16,7 +16,7 @@ module SlackWifiStatus
       if home_ssid?
         { message: 'At Home', emoji: ':house_with_garden:' }
       else
-        { message: 'At a coffee shop', emoji: ':coffee' }
+        { message: 'At a coffee shop', emoji: ':coffee:' }
       end
     end
 
