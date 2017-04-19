@@ -4,11 +4,11 @@ Set your Slack status to either :house_with_garden: or :coffee: based on your wi
 
 You list a set of SSIDs that count as being at home. If you're at home, then your status is set to
 
-:house_with_garden: At Home
+> :house_with_garden: At Home
 
 If you are using an SSID not on the list, then your status is set to
 
-:coffee: At a coffee shop
+> :coffee: At a coffee shop
 
 ## Setup
 
