@@ -1,6 +1,5 @@
 require 'net/http'
 require 'uri'
-require 'cgi'
 require 'json'
 
 module SlackWifiStatus
