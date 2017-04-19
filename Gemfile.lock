@@ -1,12 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    json (1.8.6)
     oauth (0.5.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  json
   oauth
 
 BUNDLED WITH
