@@ -21,7 +21,6 @@ module SlackWifiStatus
     end
 
     def self.set_status
-      puts "Setting status to #{status_hash}"
       SlackWifiStatus::UpdateStatus.post(status_hash)
     end
   end

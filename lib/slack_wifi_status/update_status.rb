@@ -19,7 +19,6 @@ module SlackWifiStatus
       request = Net::HTTP::Post.new(uri.request_uri)
 
       response = http.request(request)
-      puts "response: #{response}"
       response
     end
   end
