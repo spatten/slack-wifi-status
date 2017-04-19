@@ -14,15 +14,22 @@ If you are using an SSID not on the list, then your status is set to
 
 To setup, you'll need an OAUTH key for Slack and a list of SSIDs that count as being at home ([kinda detailed OAuth setup instructions](#detailed-oauth-instructions)).
 
+clone the repo:
+
+```
+git clone https://github.com/spatten/slack-wifi-status.git
+```
 Install the required gems:
 
 ```
+cd slack-wifi-status
 bundle install
 ```
 
 Create a file in `config/slack.yml` that looks like this:
 
 ```yaml
+---
 oauth_key: "xoxp-this-is-a-totally-real-oauth-key"
 home_ssids:
   - Pretty Fly for a Wi-Fi
@@ -40,7 +47,7 @@ It should update your status on Slack.
 
 ## Automatically updating your status
 
-Then setup a cron job that runs every five minutes and runs `bin/update-slack-status`, like this:
+Setup a cron job that runs every five minutes and runs `bin/update-slack-status`, like this:
 
 ```
 */5 * * * * cd /Users/yourname/path/to/code/slack-wifi-status && ./bin/update-slack-status
