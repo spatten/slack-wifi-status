@@ -13,7 +13,7 @@ module SlackWifiStatus
     end
 
     def self.status_hash
-      if home_ssid?
+      if ssid.empty? || home_ssid?
         { message: 'At Home', emoji: ':house_with_garden:' }
       else
         { message: 'At a coffee shop', emoji: ':coffee:' }
