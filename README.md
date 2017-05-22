@@ -50,7 +50,7 @@ It should update your status on Slack.
 Setup a cron job that runs every five minutes and runs `bin/update-slack-status`, like this:
 
 ```
-*/5 * * * * cd /Users/yourname/path/to/code/slack-wifi-status && ./bin/update-slack-status
+*/5 * * * * cd /Users/yourname/path/to/code/slack-wifi-status && ./bin/update-slack-status > /dev/null 2> /dev/null
 ```
 
 ## Detailed OAuth instructions
