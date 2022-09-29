@@ -1,4 +1,6 @@
 # Slack Wifi Status
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fspatten%2Fslack-wifi-status.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fspatten%2Fslack-wifi-status?ref=badge_shield)
+
 
 Set your Slack status to either :house_with_garden: or :coffee: based on your wifi SSID.
 
@@ -63,3 +65,7 @@ You need to set the permissions needed. You need `users.profile:read` and `users
 
 Slack will then give you an OAuth access token. Copy it and stick it in `config/slack.yml`.
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fspatten%2Fslack-wifi-status.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fspatten%2Fslack-wifi-status?ref=badge_large)
